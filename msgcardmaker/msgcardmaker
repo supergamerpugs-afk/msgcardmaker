@@ -1,0 +1,13 @@
+#!/bin/sh
+
+msg="$1"
+filename="card_${msg}.txt"
+
+{
+  echo "${msg}!"
+  echo ""
+  echo "Here is what the messager wanted to say!:"
+  echo "$msg"
+} > "$filename"
+
+echo "Created $filename"
